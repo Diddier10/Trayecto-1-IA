@@ -1,0 +1,505 @@
+# PROMPT PARA LOVABLE — ASLAN: ROBOT DE ESTUDIO INTELIGENTE
+
+Actúa como un equipo senior de desarrollo Full Stack, UX/UI Design, arquitectura de software y QA.
+
+Necesito que desarrolles una aplicación web completa, moderna, estética y funcional llamada **ASLAN — Robot de Estudio Inteligente**.
+
+No quiero una landing page ni un prototipo estático. Necesito una aplicación web real, interactiva, con todas sus funcionalidades implementadas, navegación fluida, persistencia de datos y diseño responsive.
+
+El objetivo es crear una plataforma que permita a los estudiantes organizar su vida académica, gestionar sus sesiones de estudio, planificar sus actividades, mejorar su rendimiento y utilizar técnicas científicas de aprendizaje.
+
+## 1. IDENTIDAD VISUAL Y DISEÑO UI/UX
+
+Construye una interfaz premium, minimalista, tecnológica y profesional.
+
+### Estilo visual
+- Diseño tipo SaaS moderno.
+- Inspiración visual en Linear, Notion, Todoist y dashboards modernos.
+- Interfaz limpia, elegante y organizada.
+- Paleta de colores: azul oscuro, índigo, violeta, blanco y tonos neutros.
+- Fondo claro con posibilidad de modo oscuro.
+- Tarjetas con bordes suaves y sombras sutiles.
+- Esquinas redondeadas.
+- Tipografía moderna, legible y jerarquizada.
+- Iconografía consistente mediante Lucide.
+- Animaciones suaves y microinteracciones.
+- Transiciones fluidas entre vistas.
+- Estados visuales claros para botones, formularios, tarjetas y acciones.
+
+### Experiencia de usuario
+- Sidebar lateral con navegación intuitiva.
+- Dashboard principal organizado visualmente.
+- Navegación rápida y clara.
+- Modales para crear y editar elementos.
+- Toasts para confirmar acciones.
+- Skeleton loaders cuando sean necesarios.
+- Estados vacíos atractivos con llamadas a la acción.
+- Validaciones de formularios.
+- Confirmación antes de eliminar información.
+- Diseño completamente responsive para escritorio, tablet y celular.
+- En dispositivos móviles, el menú debe convertirse en una navegación adaptada.
+
+Evita interfaces saturadas, diseños genéricos o elementos meramente decorativos.
+
+## 2. ESTRUCTURA PRINCIPAL DE LA APLICACIÓN
+
+La aplicación debe tener las siguientes secciones:
+
+1. Dashboard / Inicio.
+2. Sesiones de estudio.
+3. Temporizador Pomodoro.
+4. Materias y temas.
+5. Planificador semanal.
+6. Repaso inteligente.
+7. Estadísticas y rendimiento.
+8. Asistente inteligente.
+9. Notificaciones.
+10. Perfil y configuración.
+
+Todas las secciones deben estar conectadas entre sí.
+
+## 3. DASHBOARD PRINCIPAL
+
+Construye un dashboard que muestre un resumen personalizado del progreso académico.
+
+Debe incluir:
+
+- Saludo personalizado al estudiante.
+- Fecha actual.
+- Resumen de horas estudiadas.
+- Tiempo de estudio del día.
+- Número de sesiones completadas.
+- Racha de días de estudio.
+- Porcentaje de cumplimiento de objetivos.
+- Materias activas.
+- Próximas actividades.
+- Temas pendientes de repaso.
+- Progreso semanal.
+- Gráfico de actividad académica.
+- Recomendaciones de estudio.
+
+Incluir tarjetas de estadísticas con iconos, indicadores de progreso y gráficos visualmente atractivos.
+
+Los datos deben actualizarse automáticamente cuando el usuario registre sesiones, complete tareas o realice repasos.
+
+## 4. GESTIÓN DE SESIONES DE ESTUDIO
+
+Implementa un sistema completo de sesiones de estudio.
+
+Cada sesión debe permitir registrar:
+
+- Nombre de la sesión.
+- Materia.
+- Tema específico.
+- Fecha.
+- Hora de inicio.
+- Duración.
+- Objetivo de estudio.
+- Estado: pendiente, en curso o completada.
+- Notas de la sesión.
+- Nivel de concentración o rendimiento.
+
+Funcionalidades:
+
+- Crear sesiones.
+- Editar sesiones.
+- Eliminar sesiones.
+- Marcar sesiones como completadas.
+- Consultar historial.
+- Filtrar por materia, fecha y estado.
+- Visualizar duración total estudiada.
+- Registrar sesiones desde el temporizador Pomodoro.
+
+## 5. TEMPORIZADOR POMODORO
+
+Implementa un temporizador Pomodoro completamente funcional.
+
+Debe incluir:
+
+- Ciclo de estudio.
+- Tiempo de descanso corto.
+- Tiempo de descanso largo.
+- Configuración personalizada de duración.
+- Temporizador circular visual.
+- Contador regresivo en tiempo real.
+- Botones de iniciar, pausar, reanudar y reiniciar.
+- Indicador del ciclo actual.
+- Contador de Pomodoros completados.
+- Selección de materia y tema antes de comenzar.
+- Notificación visual al finalizar un ciclo.
+- Sonido opcional al finalizar.
+- Registro automático de sesiones completadas.
+
+Configuración inicial recomendada:
+- Estudio: 25 minutos.
+- Descanso corto: 5 minutos.
+- Descanso largo: 15 minutos.
+- Descanso largo después de 4 ciclos.
+
+El temporizador debe seguir correctamente su funcionamiento aunque el usuario navegue entre secciones.
+
+No debe ser solamente un contador visual: debe controlar el tiempo real y registrar las sesiones.
+
+## 6. MATERIAS Y TEMAS
+
+Crea un módulo completo de gestión académica.
+
+### Materias
+
+Cada materia debe tener:
+
+- Nombre.
+- Descripción.
+- Color identificador.
+- Icono.
+- Objetivo semanal de estudio.
+- Fecha de creación.
+- Estado activo o archivado.
+
+### Temas
+
+Cada tema debe estar asociado a una materia y contener:
+
+- Nombre.
+- Descripción.
+- Nivel de dificultad.
+- Nivel de dominio.
+- Fecha de estudio.
+- Fecha del próximo repaso.
+- Estado de aprendizaje.
+
+### Funcionalidades
+
+- Crear materias.
+- Editar materias.
+- Eliminar materias.
+- Archivar materias.
+- Crear temas.
+- Editar temas.
+- Eliminar temas.
+- Consultar temas por materia.
+- Visualizar progreso por materia.
+- Filtrar y buscar.
+- Mostrar indicadores visuales de dominio.
+
+La eliminación debe incluir confirmación y manejar correctamente los elementos relacionados.
+
+## 7. PLANIFICADOR SEMANAL
+
+Desarrolla un calendario académico interactivo.
+
+Debe incluir:
+
+- Vista semanal.
+- Vista diaria.
+- Navegación entre semanas.
+- Horarios organizados por día.
+- Sesiones de estudio.
+- Actividades pendientes.
+- Tareas y objetivos.
+- Materias asociadas a cada actividad.
+- Indicadores de estado.
+
+Funcionalidades:
+
+- Crear actividad.
+- Editar actividad.
+- Eliminar actividad.
+- Reprogramar actividades.
+- Marcar actividad como completada.
+- Filtrar por materia.
+- Visualizar conflictos de horario.
+- Mostrar las próximas actividades en el dashboard.
+
+La interfaz debe ser clara, similar a un calendario de productividad moderno.
+
+## 8. REPASO INTELIGENTE Y REPETICIÓN ESPACIADA
+
+Implementa un módulo de aprendizaje basado en repetición espaciada.
+
+Utiliza el algoritmo SM-2 como referencia para programar los repasos.
+
+Cada tema debe poder ser repasado mediante una evaluación del nivel de recuerdo.
+
+El usuario debe poder indicar qué tan bien recordó el tema, utilizando una escala de calidad de respuesta de 0 a 5.
+
+El sistema debe calcular:
+
+- Próxima fecha de repaso.
+- Intervalo de repaso.
+- Factor de facilidad.
+- Número de repasos.
+- Nivel de dominio.
+- Temas que requieren atención.
+
+Incluye una vista de:
+
+- Repasos pendientes.
+- Repasos de hoy.
+- Próximos repasos.
+- Temas dominados.
+- Temas difíciles.
+
+Debe existir un flujo completo para realizar un repaso y guardar su resultado.
+
+No implementes el SM-2 únicamente como una etiqueta visual: debe actualizar los datos de programación de cada tema.
+
+## 9. ESTADÍSTICAS Y RENDIMIENTO
+
+Construye un dashboard analítico con gráficos.
+
+Debe mostrar:
+
+- Horas estudiadas por día.
+- Horas estudiadas por semana.
+- Distribución del tiempo por materia.
+- Sesiones completadas.
+- Porcentaje de cumplimiento de objetivos.
+- Racha de estudio.
+- Evolución del dominio de los temas.
+- Comparación entre tiempo planificado y tiempo real.
+- Rendimiento académico a lo largo del tiempo.
+
+Utiliza gráficos modernos y legibles.
+
+Los gráficos deben alimentarse de los datos reales almacenados en la aplicación y actualizarse automáticamente.
+
+Si el usuario no tiene datos, mostrar estados vacíos útiles en lugar de gráficos inventados.
+
+## 10. ASISTENTE INTELIGENTE DE ESTUDIO
+
+Crea un módulo de asistente virtual llamado ASLAN AI.
+
+Debe ofrecer recomendaciones relacionadas con:
+
+- Organización del tiempo.
+- Distribución de sesiones.
+- Materias con menor progreso.
+- Temas que requieren repaso.
+- Cumplimiento de objetivos.
+- Priorización de actividades.
+- Planificación de una jornada de estudio.
+
+El asistente debe utilizar el contexto de la aplicación cuando esté disponible.
+
+Ejemplos de recomendaciones:
+- Recomendar repasar temas que están próximos a vencer.
+- Sugerir dedicar más tiempo a una materia con bajo progreso.
+- Recomendar una sesión cuando el usuario tenga tiempo libre.
+- Sugerir pausas cuando se acumulen sesiones de estudio.
+
+Si es posible, integra un proveedor de inteligencia artificial mediante una API segura y variables de entorno.
+
+Nunca expongas claves secretas en el frontend.
+
+Si no existe una API configurada, implementa un modo de recomendaciones locales basado en reglas y deja clara esta condición. No simules una conexión real con IA.
+
+## 11. SISTEMA DE NOTIFICACIONES
+
+Implementa un centro de notificaciones.
+
+Debe mostrar notificaciones para:
+
+- Próximos repasos.
+- Sesiones programadas.
+- Objetivos pendientes.
+- Sesiones Pomodoro finalizadas.
+- Actividades próximas.
+- Recordatorios de estudio.
+
+Funcionalidades:
+- Marcar como leída.
+- Marcar todas como leídas.
+- Eliminar notificaciones.
+- Configurar preferencias.
+- Mostrar contador de notificaciones no leídas.
+
+Utiliza notificaciones dentro de la aplicación. Las notificaciones del navegador deben solicitar permiso de forma explícita.
+
+## 12. PERFIL Y CONFIGURACIÓN
+
+Implementa una sección de perfil con:
+
+- Nombre del estudiante.
+- Correo electrónico, si existe autenticación.
+- Foto o avatar.
+- Objetivo diario de estudio.
+- Objetivo semanal.
+- Preferencias de Pomodoro.
+- Preferencias de notificaciones.
+- Tema claro u oscuro.
+- Configuración de privacidad.
+
+Debe permitir editar y guardar la configuración.
+
+Incluye opciones para:
+- Exportar información.
+- Eliminar datos locales.
+- Restablecer preferencias.
+- Cerrar sesión, si existe autenticación.
+
+## 13. EXPORTACIÓN DE INFORMACIÓN
+
+Implementa exportación funcional de los datos de la aplicación.
+
+Formatos requeridos:
+
+- JSON: exportar datos completos.
+- CSV: exportar sesiones e información tabular.
+- PDF: generar un informe de rendimiento académico.
+
+El PDF debe incluir:
+
+- Nombre del estudiante.
+- Periodo del informe.
+- Horas estudiadas.
+- Sesiones completadas.
+- Estadísticas por materia.
+- Progreso de objetivos.
+- Gráficos relevantes.
+
+Los botones de exportación deben generar archivos descargables reales.
+
+## 14. PERSISTENCIA Y ARQUITECTURA
+
+La aplicación debe estar construida con una arquitectura mantenible.
+
+Tecnologías preferidas:
+
+- React.
+- TypeScript.
+- Vite.
+- Tailwind CSS.
+- shadcn/ui.
+- Lucide React.
+- Recharts para gráficos.
+
+### Persistencia
+
+Los datos no deben perderse al actualizar la página.
+
+Preferiblemente:
+- Utiliza Supabase para base de datos, autenticación y persistencia.
+- Si Supabase no está configurado, implementa persistencia local mediante localStorage como modo funcional de demostración.
+- Organiza la lógica de persistencia para poder migrar del almacenamiento local a Supabase sin rehacer toda la interfaz.
+
+Define modelos claros para:
+
+- Usuario.
+- Materia.
+- Tema.
+- Sesión de estudio.
+- Actividad.
+- Repaso.
+- Notificación.
+- Preferencias.
+
+No coloques toda la lógica en un único componente.
+
+Organiza el código en componentes reutilizables, páginas, servicios, hooks y tipos.
+
+## 15. DATOS INICIALES DE DEMOSTRACIÓN
+
+Incluye datos de ejemplo que permitan demostrar la aplicación inmediatamente.
+
+Crea:
+- 4 materias.
+- Varios temas por materia.
+- Sesiones de estudio.
+- Actividades semanales.
+- Repasos pendientes.
+- Estadísticas de ejemplo.
+
+Los datos deben ser coherentes entre sí.
+
+Incluye una opción para restaurar los datos de demostración.
+
+Importante: los datos iniciales deben poder modificarse y eliminarse. No deben ser contenido estático que impida usar la aplicación.
+
+## 16. FUNCIONALIDAD REAL Y CALIDAD
+
+Este punto es obligatorio:
+
+NO quiero botones decorativos.
+
+Cada botón, menú, formulario, filtro, tarjeta interactiva y acción debe tener un comportamiento funcional.
+
+Implementa:
+- Validaciones.
+- Manejo de errores.
+- Confirmaciones.
+- Persistencia.
+- Actualización reactiva de la interfaz.
+- Estados de carga.
+- Estados vacíos.
+- Feedback visual.
+- Navegación funcional.
+
+No dejes:
+- Botones sin acción.
+- Enlaces rotos.
+- Páginas vacías.
+- Funcionalidades simuladas sin indicarlo.
+- Datos inconsistentes.
+- Formularios que no guardan.
+- Gráficos que no utilizan los datos de la aplicación.
+
+## 17. RESPONSIVE DESIGN
+
+La aplicación debe verse excelente en:
+
+- Desktop.
+- Laptop.
+- Tablet.
+- Smartphone.
+
+En móvil:
+- Sidebar adaptable.
+- Menú móvil intuitivo.
+- Tarjetas reorganizadas.
+- Gráficos adaptables.
+- Formularios cómodos.
+- Calendario optimizado.
+- Temporizador visible y fácil de utilizar.
+
+No basta con reducir el tamaño de la interfaz de escritorio. Debe existir una adaptación real de la experiencia móvil.
+
+## 18. CRITERIOS DE ACEPTACIÓN
+
+Antes de terminar, verifica que:
+
+1. Se pueda crear, editar y eliminar una materia.
+2. Se puedan crear y gestionar temas.
+3. Se puedan iniciar, pausar y completar sesiones Pomodoro.
+4. Las sesiones completadas se registren correctamente.
+5. Se puedan crear y reprogramar actividades.
+6. Se puedan realizar repasos y actualizar el algoritmo de repetición espaciada.
+7. Las estadísticas cambien al registrar nuevas actividades.
+8. Las notificaciones se puedan gestionar.
+9. La configuración se guarde.
+10. Los datos persistan al recargar.
+11. JSON, CSV y PDF se puedan descargar.
+12. La interfaz funcione en escritorio y móvil.
+13. No existan botones sin funcionalidad.
+14. No existan errores de consola críticos.
+15. La aplicación se pueda ejecutar y presentar de inmediato.
+
+## INSTRUCCIÓN FINAL
+
+Desarrolla la aplicación completa, no solamente su diseño.
+
+Prioriza:
+1. Funcionalidad real.
+2. Experiencia de usuario.
+3. Diseño visual premium.
+4. Arquitectura limpia.
+5. Responsive design.
+6. Persistencia de datos.
+
+Construye primero la estructura completa y después implementa cada funcionalidad conectándola con el resto de la aplicación.
+
+No simplifiques los módulos solicitados ni elimines funcionalidades para terminar más rápido.
+
+El resultado debe ser una aplicación web profesional que pueda presentar como un proyecto universitario terminado, con una experiencia fluida, coherente y visualmente impactante.
+
+Cuando termines, revisa el funcionamiento de todos los módulos y corrige los errores que encuentres.
